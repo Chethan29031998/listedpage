@@ -1,0 +1,48 @@
+.grid-container{
+  display: grid;
+
+  grid-template-columns: 500px auto auto;
+          grid-template-rows: 60px 600px 110px;
+  grid-template-areas:"head head head  "
+  "lft con rt"
+  "foot foot foot";
+  margin-bottom:1px ;
+  /* background-color: rgb(13, 216, 47); */
+          /* text-align:center; */
+          padding: 10px;
+          gap: 1px;
+}
+  /* .grid-container>div{ */
+/* background-color: rgb(224, 33, 33); */
+/* padding: 10px; */
+
+  /* } */
+
+
+.item1{
+  grid-area:head;
+}
+.item2{
+  grid-area:lft;
+  background-image:url("https://qwintlabs.com/wp-content/uploads/2018/02/Experienced-Specialists-Image.png") ;
+  background-size: cover;
+  
+}
+.item3{
+  grid-area:con;
+  /* background-image: repeating-conic-gradient(red 10%, yellow 20%); */
+  /* background-image: linear-gradient(to bottom right, rgb(182, 100, 100), rgb(233, 233, 95)); */
+ /* border-radius: 50%; */
+ 
+}
+.item4{
+  grid-area:rt;
+  background-image:url("https://zipcodes.ng/learn/wp-content/uploads/2020/12/Facebook-Dating-app.jpg"); 
+  background-size: cover;
+  
+}
+
+.item5{
+  grid-area: foot;
+  background-color: rgb(33, 53, 53);
+}
